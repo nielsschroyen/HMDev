@@ -1,57 +1,9 @@
 var isDebuggingInschrijving = true;
 
-function loadVakantieInschrijving()
-{
-aantalHonden = 1;
-var dat = new Date();
-var jaar = dat.getYear() + 1900;
-if(jaar > 3000)
-{
-jaar = jaar-1900;
-}
-
-
-dag = dat.getDate();
-if(dag > 9)
-	dag = dag;
-	else
-	dag = "0"+dag;
-maand = dat.getMonth()+1;
-if(maand> 9)
-	maand = maand;
-	else
-	maand = "0"+maand;
-var data = (dag +"/" + maand +"/" + jaar);
-//document.getElementById('dp_verblijf_vertrek').value = data;
-//document.getElementById('dp_verblijf_aankomst').value = data;
-calculeer();
-
-}
-
 function loadVakantieInschrijving2()
 {
 aantalHonden = 1;
-var dat = new Date();
-var jaar = dat.getYear() + 1900;
-if(jaar > 3000)
-{
-jaar = jaar-1900;
-}
-
-
-dag = dat.getDate();
-if(dag > 9)
-	dag = dag;
-	else
-	dag = "0"+dag;
-maand = dat.getMonth()+1;
-if(maand> 9)
-	maand = maand;
-	else
-	maand = "0"+maand;
-var data = (dag +"/" + maand +"/" + jaar);
 calculeer();
-//document.getElementById('HiddenID').value = 0;
 }
 
 function verzendinschrijving()
@@ -90,7 +42,6 @@ function NextStepOne()
 			GoToStepTwo();
 	}
 }
-
 
 function LoadPerson(person)
 {
