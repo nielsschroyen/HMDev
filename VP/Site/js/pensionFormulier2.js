@@ -28,12 +28,6 @@ calculeer();
 
 }
 
-function KortingsCodeUpdate()
-{
-alert(document.getElementById('txt_idKortingsCode').value);
-calculeer();
-}
-
 function loadVakantieInschrijving2()
 {
 aantalHonden = 1;
@@ -929,21 +923,21 @@ var hmKorting = 0;
 //KORTINGEN!!!
 var korting = 0;
 var kortingperc = 1;
-var code = document.getElementById('txt_kortingscode').value;
-/*
-if(code == "111")
-	{
-	korting = -5;µ
-	prijstext += "Nieuwsbrief korting: " + korting + " Euro  <br>";
-	}
+var code = document.getElementById('txt_idKortingsCode').value;
+
+//if(code == "111")
+//	{
+//		korting = -5;
+//		prijstext += "Nieuwsbrief korting: " + korting + " Euro  <br>";
+//	}
 
 if(code == "222")
 	{
-	kortingperc = kortingperc -0.05;
-	prijstext += "Nieuwsbrief korting: 5%  <br>";
+	kortingperc = kortingperc - 0.1;
+	prijstext += "Korting via code: 10%  <br>";
 	}
 
-*/
+
 //Online Boekings korting
 //	kortingperc = kortingperc -0.10;
 //	prijstext += "Online boekings korting: 10%  <br>";
