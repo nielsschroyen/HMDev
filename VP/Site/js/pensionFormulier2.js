@@ -28,6 +28,12 @@ calculeer();
 
 }
 
+function KortingsCodeUpdate()
+{
+alert(document.getElementById('txt_idKortingsCode').value);
+calculeer();
+}
+
 function loadVakantieInschrijving2()
 {
 aantalHonden = 1;

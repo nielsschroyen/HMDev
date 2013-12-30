@@ -106,6 +106,10 @@
 						
 						<label>E-mailadres <br /> </label>	<input type="text" class="text" id="txt_idEmail" name="txt_idEmail"/>
 						<br />
+						<label>Kortingscode <br /> </label>	<input type="text" class="text" id="txt_idKortingsCode" name="txt_idKortingsCode"  
+							onkeyup="KortingsCodeUpdate()"
+							onchange="KortingsCodeUpdate()"/>
+						<br />
 						<div>
 						<div class="volgendeknop" id="stap1VolgendeKnop" onclick="NextStepOne(); "></div>
 						</div>
