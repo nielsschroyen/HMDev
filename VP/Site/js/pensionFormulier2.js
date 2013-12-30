@@ -1,4 +1,4 @@
-var isDebuggingInschrijving = false;
+var isDebuggingInschrijving = true;
 
 function loadVakantieInschrijving()
 {
