@@ -931,7 +931,7 @@ var code = document.getElementById('txt_idKortingsCode').value;
 //		prijstext += "Nieuwsbrief korting: " + korting + " Euro  <br>";
 //	}
 
-if(code == "222")
+if(kortingsCodeIsValid(code))
 	{
 	kortingperc = kortingperc - 0.1;
 	prijstext += "Korting via code: 10%  <br>";
@@ -1069,7 +1069,10 @@ function aantalhonden()
 	}
 	return 1;
 }
-
+function kortingsCodeIsValid(code)
+{
+	return code === 'HM3musketiertjes';
+}
 function formatDates(dat_Aankomst,dat_Vertrek)
  {
  //FORMAT Dates!!
