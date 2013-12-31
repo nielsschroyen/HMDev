@@ -14,147 +14,16 @@ document.getElementById('vakantieform').submit();
 function NextStepOne()
 {
 	if(isDebuggingInschrijving || ValidateStepOne())
-	{
-		// var email = document.getElementById('txt_idEmail').value;
-		// var tel = document.getElementById('txt_idTelefoonnummer').value;
-		// var tel2 = document.getElementById('txt_idTelefoonnummer2').value;
-		// var url = "http://vakantiepark.hoogmaatheide.be/scripts/inschrijving/getClientInfo.php?email="+ email  +"& tel="+tel+"& tel2="+tel2;
-		// document.getElementById('stap1VolgendeKnop').disabled ='disabled'; 	
-			// jQuery.ajax({
-				// url: url,
-				// dataType: 'jsonp',
-				// success: function(response) {
-					// if(response.klant != 'empty' )
-					// {
-					   // LoadPerson(response.klant);
-					   // }
-					   // else
-					   // {
-					   // LoadPerson(null);
-					   // }
-					   // GoToStepTwo();
-					// },
-				// error: function (xhr, ajaxOptions, thrownError) {
-				 // LoadPerson(null);
-				// GoToStepTwo();
-				// }
-			// });
-			GoToStepTwo();
+	{	
+		GoToStepTwo();
 	}
 }
-
-function LoadPerson(person)
-{
-	var hondnr = 0;
-	if(person == null)
-	{
-	document.getElementById('txtPensionKlantID').value = "-1";
-	document.getElementById('txt_straat').value = "";
-	document.getElementById('txt_nr').value = "";
-	document.getElementById('txt_postcode').value="";
-	document.getElementById('txt_gemeente').value = "";
-	document.getElementById('txt_btw').value = "";
-	document.getElementById ('select_land').value = "België";   
-	
-	
-	}
-	else
-	{
-	document.getElementById('txtPensionKlantID').value = person.PensionKlantID;
-	document.getElementById('txt_straat').value = person.Straat;
-	document.getElementById('txt_nr').value = person.HuisNr;
-	document.getElementById('txt_postcode').value=person.Postcode;
-	document.getElementById('txt_gemeente').value = person.Gemeente;
-	document.getElementById('txt_btw').value = person.BTW;
-	document.getElementById ('select_land').value = person.Land;   
-
-	for (hond in person.Honden)
-	  {
-		hondnr =  hondnr+1;
-	    LoadHond(person.Honden[hond],hondnr)		
-	  }
-	 
-	}
-	
-	 if(hondnr == 0)
-	  {
-	  wijzigAantalHonden(1); 
-	  }
-	  else
-	  {
-	 wijzigAantalHonden(hondnr);  
-	}	 
-	  while(hondnr < 5)
-	  {
-	  hondnr =  hondnr+1;
-		  LoadHond(null,hondnr)
-		  
-	  }
-	
-	
-}
-
-function LoadHond(hond, hondnb)
-{
-	if(hond == null)
-	{
-	document.getElementById('hond'+hondnb+'_id').value = "-1";
-	document.getElementById('txt_hond'+hondnb+'_naam').value = "";
-	document.getElementById('txt_hond'+hondnb+'_ras').value = "";
-	document.getElementById('txt_hond'+hondnb+'_opmerkingen').value = "";
-	document.getElementById('txt_hond'+hondnb+'_voeding_naam').value="";
-	document.getElementById('txt_hond'+hondnb+'_voeding_soort').value = "";
-	document.getElementById('txt_hond'+hondnb+'_voeding_opmerkingen').value = "";
-	document.getElementById('txt_hond'+hondnb+'_med_naam').value = "";
-	document.getElementById('txt_hond'+hondnb+'_med_opmerkingen').value = "";
-	
-	document.getElementById ('select_hond'+hondnb+'_geslacht').value = "0";   
-	document.getElementById ('select_hond'+hondnb+'_grootte').value = "0";   
-	document.getElementById ('select_hond'+hondnb+'_jaar').value = "2013";   
-	document.getElementById ('radio_hond'+hondnb+'_gecast').checked = 0;   
-	document.getElementById ('radio_hond'+hondnb+'_vanhm').checked = 0;   
-	document.getElementById ('radio_hond'+hondnb+'_dieet').checked = 0;   
-	document.getElementById ('radio_hond'+hondnb+'_med').checked = 0;   	
-	
-	document.getElementById('div_hond_'+hondnb).style.display ='none'; 
-	
-
-	}
-	else
-	{
-			document.getElementById('txt_hond'+hondnb+'_naam').value = hond.HondNaam;
-			document.getElementById('hond'+hondnb+'_id').value = hond.HondID;
-			document.getElementById('txt_hond'+hondnb+'_ras').value = hond.Ras;
-			document.getElementById('txt_hond'+hondnb+'_opmerkingen').value = hond.Opmerkingen;
-			document.getElementById('txt_hond'+hondnb+'_voeding_naam').value= hond.DieetSoort;
-			document.getElementById('txt_hond'+hondnb+'_voeding_soort').value = hond.DieetFrequency;
-			document.getElementById('txt_hond'+hondnb+'_voeding_opmerkingen').value = hond.DieetInfo;
-			document.getElementById('txt_hond'+hondnb+'_med_naam').value = hond.MedicatieNaam;
-			document.getElementById('txt_hond'+hondnb+'_med_opmerkingen').value = hond.MedicatieInfo;
-			
-			document.getElementById ('select_hond'+hondnb+'_geslacht').value = hond.Geslacht;   
-			document.getElementById ('select_hond'+hondnb+'_grootte').value = hond.Grootte;   
-			document.getElementById ('select_hond'+hondnb+'_jaar').value = hond.GeboorteDatum;   
-			document.getElementById ('radio_hond'+hondnb+'_gecast').checked = hond.Gecastreerd;   
-			document.getElementById ('radio_hond'+hondnb+'_vanhm').checked = hond.VanHoogmaatheide;   
-			document.getElementById ('radio_hond'+hondnb+'_dieet').checked = hond.Dieet;   
-			document.getElementById ('radio_hond'+hondnb+'_med').checked = hond.Medicatie;   	
-		
-	}
-	
-	showif('radio_hond'+hondnb+'_dieet','div_hond'+hondnb+'_dieet');
-	showif('radio_hond'+hondnb+'_med','div_hond'+hondnb+'_med');
-	
-	
-}
-
 function GoToStepTwo()
 {
 	document.getElementById('stap1VolgendeKnop').disabled =''; 	
 	document.getElementById('igeg').style.display ='none'; 
 	document.getElementById('ugeg').style.display =''; 
 }
-
 function ValidateStepOne()
 {
 
@@ -1022,7 +891,7 @@ function aantalhonden()
 }
 function kortingsCodeIsValid(code)
 {
-	return code === 'HM3musketiertjes';
+	return b64_sha512(code.trim().toLowerCase()) === 'j98QIzhN6osxRi1FlkTwnH1ExNf5P4B92Glp9PdPGVIiVW55Qsw8MuE2uVJ9EYay5g30t2Xrpu2PXEnZRLBd3g';
 }
 function formatDates(dat_Aankomst,dat_Vertrek)
  {
