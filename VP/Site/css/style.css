@@ -1,0 +1,1475 @@
+/*site*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* site */
+#wrapper { 	
+position:relative;
+	margin:0px auto;} 
+	html{
+	 overflow: auto;
+	}
+	
+/*Winter*/
+	body{
+
+font-size: 13px;
+font-family:arial, serif;
+margin:0px;
+background:#ffffff url('http://www.hoogmaatheide.be/images/vp_template_back.jpg') no-repeat top center;
+}
+
+
+#footerinfo a,#footerinfo a:hover {
+color:#000000;
+font-weight: bold;
+
+
+}
+#footerinfo{
+	font-size: 12px;
+	color:#000000;
+	position:absolute;
+	overflow:hidden;
+	bottom:-25px;
+	left:0px;
+	text-align:right;
+}
+
+span.footerspacer{
+	color:#000000;
+	font-weight: bold;
+}
+
+/*Winter*/
+
+
+/*Zomer
+body{
+
+font-size: 13px;
+font-family:arial, serif;
+margin:0px;
+background:#71bf44 url('http://www.hoogmaatheide.be/images/vp_template_back.jpg') no-repeat top center;
+}
+
+
+#footerinfo a,#footerinfo a:hover {
+color:#ffffff;
+font-weight: bold;
+}
+
+#footerinfo{
+	font-size: 12px;
+	color:#ffffff;
+	position:absolute;
+	overflow:hidden;
+	bottom:0px;
+	left:0px;
+	text-align:right;
+}
+
+span.footerspacer{
+	color:#ffffff;
+	font-weight: bold;
+}
+
+
+Zomer*/
+
+
+img {
+	border:0px;
+	padding:5px;
+	max-width: 100%; /* not working in IE6*/
+	/*height: auto;*/ /* you can enable this. but it will cause safari problem*/
+}
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+	hr {height:1px;border:none;border-top:1px dashed #666666; width:95%;}
+	
+input,select,textarea{font-size: 12px;
+font-family:arial, serif;
+}
+input:focus, textarea:focus, textarea:active 
+{
+outline: 0px solid red; 
+border:2px #71bf44 solid;
+}
+
+
+H1{
+color:#d2232a;
+font-size: 15px;
+}
+H2{
+color:#d2232a;
+font-size: 14px;
+}
+H3{
+color:#d2232a;
+font-size: 13px;
+margin:0px;
+padding:0px;
+}
+H4{
+color:#d2232a;
+font-size: 12px;
+font-weight:bold;
+margin:0px;
+
+}
+#main_mid_mid_container p, #main_mid_mid_container ul
+{
+margin-top:0px;
+}
+
+a:link {color:#d2232a;}      /* unvisited link */
+a:visited {color:#8a1903;}  /* visited link */
+a:hover {color:#8a1903;}  /* mouse over link */
+a:active {color:#8a1903;}  /* selected link */
+
+
+#divimfull 
+{
+width:170px;
+height:200px;
+padding:0px;
+float:left;
+margin-right:15px;
+background-repeat:no-repeat;
+
+}
+
+#divimfull img, #divimgcontainer img
+{
+padding:0px;
+}
+#divimgleft,  #divimgright, #divimgmid
+{
+position:absolute;
+width:170px;
+height:200px;
+padding:0px;
+background-repeat:no-repeat;
+
+}
+
+#divimgmidleft,  #divimgmidright
+{
+position:absolute;
+width:355px;
+height:200px;
+padding:0px;
+background-repeat:no-repeat;
+
+}
+
+
+#divimgcontainer
+{
+margin-top:20px;
+margin-bottom:20px;
+height:200px;
+
+}
+
+#divimgleft, #divimgmidleft
+{
+left:0px;
+}
+
+#divimgmid, #divimgmidright
+{
+left:185px;
+}
+
+#divimgright
+{
+left:370px;
+}
+
+
+
+/******************* template container *********/
+#main_container {
+
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	top:0px;
+	width:835px;
+	height:709px;
+	
+}
+
+#header {
+	position:absolute;
+	left:22px;
+	top:0px;
+	width:785px;
+	height:95px;
+
+}
+
+#headerlogo {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:145px;
+	height:95px;
+	 background-repeat: no-repeat; 
+     background-image: url('images/sitesprite.png');
+     background-position: -5px -792px;
+}
+
+#main_mid_mid_container {
+	position:absolute;
+	left:22px;
+	top:95px;
+	width:785px;
+	height:450px;
+	background:#00fffddf;
+}
+
+#main_mid_bottom_container {
+	position:absolute;
+	left:22px;
+	bottom:0px;
+	width:785px;
+	height:100px;
+	text-align:center;
+}
+
+div.header_menu {
+	position:absolute;
+	left:180px;
+	top:0px;
+	width:667px;
+	height:95px;
+}
+
+div.content_container {
+	position:absolute;
+	left:160px;
+	top:-30px;
+	width:620px;
+	height:500px;
+overflow:auto;
+text-align:justify;
+padding-right:8px;
+
+}
+
+div.content_launcher_container {
+font-size: 14px;
+	position:absolute;
+	left:0px;
+	top:-20px;
+	width:765px;
+	height:450px;
+overflow:auto;
+text-align:justify;
+font-family:Trebuchet MS,Georgia,Arial;
+
+}
+div.left_menu_container{
+	position:absolute;
+	left:-30px;
+	top:-20px;
+	width:209px;
+	height:450px;
+	 background-repeat: no-repeat; 
+     background-image: url('images/sitesprite.png');
+     background-position: -15px -172px;
+
+}
+
+
+
+
+
+#newsletter a {
+	position:absolute;
+	right:-30px;
+	bottom:10px;
+	width:107px;
+	height:108px;
+    background-repeat: no-repeat; 
+    background-image: url('images/sitesprite.png');
+    background-position: -10px -665px;
+}
+
+/******************* Reservatie formuluer *******/
+
+
+#divformcontainer input,#divformcontainer select, #divformcontainer textarea
+{
+margin-bottom:10px;
+font-size:12px;
+}
+#divformcontainer select
+{
+margin-top:4px;
+}
+#divformcontainer input.radio	
+{
+margin-bottom:12px;
+}
+
+#divformcontainer input.text	
+{
+width:200px;
+}
+#divformcontainer textarea
+{
+width:200px;
+}
+
+#divformcontainer hr {
+height:1px;
+border:none;
+border-top:1px dashed #666666; 
+padding-bottom: 5px;
+}
+
+
+div.divformcontainer
+	{
+	margin-left:auto;
+	margin-right:auto;
+	width:570px;
+	}
+div.divform
+	{
+	left:0px;
+	width:320px;
+	height:385px;
+	overflow:auto;
+	border-right: #666666 1px dashed; 
+	padding-right: 10px;
+	font-family:arial;
+		font-size:12px;
+	
+	}
+div.formtitle
+	{
+	font-size: 13px;
+	font-weight:bold;
+	color:#d2232a;
+	margin-bottom:8px;
+	}
+div.volgendeknop
+	{
+	background:url(images/next.png) no-repeat;
+	width:93px;
+	height:27px;
+	float:right;
+	}
+div.volgendeknop:hover
+	{
+	cursor:pointer;
+	}
+div.vorigeknop
+	{
+	background:url(images/back.png) no-repeat;
+	width:93px;
+	height:27px;
+	float:left;
+	
+	}
+div.vorigeknop:hover
+	{
+	cursor:pointer;
+	}
+div.sendknop
+	{
+	background:url(images/send.png) no-repeat;
+	width:93px;
+	height:27px;
+	float:right;
+	
+	}
+div.sendknop:hover
+	{
+	cursor:pointer;
+	}
+
+div.formclear
+	{
+	clear:both;
+	}
+
+p.infotitle
+	{
+	font-size: 13px;
+	font-weight:bold;
+	color:#d2232a;
+	margin:0px 0px 7px 0px;
+	}
+
+
+div.divformelementscontainer
+{
+position:absolute;
+left:0px;
+width:520px;
+}
+div.divformelements
+{
+position:absolute;
+left:0px;
+width:340px;
+}
+
+#divforminfocontainer
+{
+position:absolute;
+left:330px;
+top:50px;
+width:210px;
+height:300px;
+padding:0px 0px 0px 20px;
+margin:0px;
+}
+#divforminfocontainer div
+{
+padding-bottom:10px;
+}
+
+#steptitle
+{
+font-size: 12px;
+width:540px;
+padding:0px 0px 10px 0px;
+border-bottom: #666666 1px dashed; 
+margin-bottom:15px;
+}
+
+
+
+/******************* contact *******/
+div.divcontactleft
+{
+border-right: #666666 2px dotted; 
+padding-right: 12px; 
+position: absolute; 
+width: 300px; 
+top: 40px; 
+left: 0px;
+}
+
+div.divcontactright
+{
+position: absolute;   
+width: 260px; 
+top: 38px; 
+left: 325px;
+line-height: 19px;
+}
+
+/******************* Menu ********************/
+
+#menu {
+	position:absolute;
+	overflow:hidden;
+	left:-15px;
+	bottom:39px;
+	padding:0px;
+	margin:0 0 0 0;
+	width:667px;
+	height:40px;
+	border:0px red solid;
+}
+#menu ul {
+	float:left;
+	width:100%;
+	height: 40px;
+	padding:0px;
+	margin:0px;
+}
+
+
+#menu ul li {
+	display: inline;
+	font-size: 11px;
+	font-family:Arial,Verdana;
+	font-weight: bold;
+	height:40px;
+	margin:0px;
+	
+}
+#menu ul li a { /*145x70*/
+	float: left;
+	display: block;
+	height:30px;
+	width:102px;
+	color: #fff500;
+	text-align:center;
+	padding: 0px 10px 0px 0px;
+	margin-right:20px;
+	text-decoration:none;
+	background-repeat: no-repeat;
+    background-image: url(images/sitesprite.png);
+    background-position: -10px -70px;
+	line-height: 31px;
+}
+
+#menu ul li a:hover, #header ul li.current_page_item a,  #header ul li.current_page_ancestor a {
+height:40px;
+	width:102px;
+          font-weight: bold;
+	color: #fff500;
+	cursor:pointer;
+	line-height: 5px;
+	background-repeat: no-repeat;
+    background-image: url(images/sitesprite.png);
+    background-position: -10px -10px;
+	line-height: 31px;
+}
+
+#mainsearch
+{
+	width:125px;
+	height:26px;
+	background-repeat: no-repeat;
+	background-image: url(images/sitesprite.png);
+	background-position: -10px -130px;
+	position:absolute;
+	right:4px;
+	bottom:15px;
+}
+
+#mainsearch input.submit {
+width:20px;
+height:28px;
+cursor:pointer;
+background-color:transparent;
+border:0px;
+position:absolute;
+left:0px;
+top:0px;
+}
+#mainsearchform {
+height:26px;
+margin:0px;
+padding:0px;
+}
+#mainsearch input.input {
+border:0px;
+background-color:transparent;
+color:#9b9b9b;
+width:120px;
+position:absolute;
+left:26px;
+top:2px;
+}
+
+/*
+#mainsearch input.submit {
+width:20px;
+height:20px;
+cursor:pointer;
+
+
+}
+#mainsearch input {
+border:0px;
+background-color:transparent;
+color:#9b9b9b;
+width:120px;
+height:28px;
+margin-top:-4px;
+}
+*/
+/******************* Sidebar *****************/
+
+#sidebar {
+font-size:11px;
+	color:#000000;
+position:absolute;	
+top:25px;
+left:7px;}
+
+#sidebar a{text-decoration:none;}
+
+#main_mid_mid_container li.page_item  {
+background-repeat: no-repeat; 
+     background-image: url('images/sitesprite.png');
+ background-position: 12px -948px;
+color:#000000;font-weight: bold; padding:8px 0px 0px 0px; }
+#main_mid_mid_container li.page_item a{
+	text-decoration:none;
+	padding:0px 0px 0px 45px; 
+	width:150px;
+	left:0px;
+	height:29px;
+	color:#000000; 
+	font-weight:bolder; 
+	font-family:Trebuchet MS,Georgia,Arial;
+	 display: block;
+	 line-height: 20px;
+}
+#main_mid_mid_container li.current_page_item , #main_mid_mid_container li.current_page_ancestor
+{
+background:url('');
+}
+
+#main_mid_mid_container li.current_page_item a , #main_mid_mid_container li.current_page_ancestor a,  #main_mid_mid_container li.page_item a:hover{
+	color:#ffffff; 
+	font-weight:bolder;
+	padding:0px 0px 0px 45px; 
+	background-repeat: no-repeat; 
+     background-image: url('images/sitesprite.png');
+     background-position: -10px -907px;
+	width:150px;
+	left:0px;
+	height:29px;
+	display: block;
+	font-family:Trebuchet MS, Georgia,Arial;
+	line-height: 20px;
+	}
+	
+	
+#main_mid_mid_container li.child_item a{
+color:#000000; 
+font-weight: normal; 
+font-family:Arial,Verdana;
+ background:url('');
+ display:inline;
+ padding:0px 0px 0px 45px; 
+
+}
+#main_mid_mid_container li.current_child_item a,#main_mid_mid_container li.child_item a:hover{color:#d2232a; font-weight: bold; font-family:Arial,Verdana; background:url('');display:inline;}
+
+
+#sidebar ul {
+	width:100%;
+	list-style-type: none;
+	margin: 0px 0px 8px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#sidebar li {
+	/*line-height: 1.8em;*/
+	list-style-type: none;
+	margin: 0px 0px 0px 0px;
+	/*padding: 5px 0px 10px 47px;*/
+	padding: 0px
+
+	
+}
+
+#sidebar ul ul{
+	padding:0px 2px 0 0;
+}
+
+#sidebar ul ul ul{
+	padding:0;
+}
+
+#sidebar ul ul li{
+font-size:12px;
+	line-height: 1.6em;
+	list-style-type: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 2px 0px;
+}
+
+
+
+/************** IMAGE MAP **************/
+		#map {
+			margin:0;
+			padding:0;
+			width:570px;
+			height:370px;
+			background:url(images/plattegrond.gif) top left no-repeat #fffddf;
+			font-family:arial, helvetica, sans-serif;
+			font-size:10pt;
+			text-align:center; 
+		}
+		
+		#map li {
+			margin:0;
+			padding:0;
+			list-style:none;
+		}
+		
+		#map li a {
+			position:absolute;
+			display:block;
+   			background:url(blank.gif);
+   			text-decoration:none;
+			color:#000;
+		}
+		
+		#map li a span { display:none; }
+		
+		#map li a:hover span {
+			position:relative;
+			display:block;
+			width:180px;
+			left:20px;
+			top:20px;
+			border:2px solid #d2232a;
+			background:#fffddf;
+			padding:5px;
+  		}
+		
+		#map li a:hover span.map_li_inkom {
+			left:-150px;
+			top:-20px;
+  		}
+		
+		#map li a:hover span.map_li_sociaal {
+			left:-50px;
+			top:35px;
+  		}
+		
+		#map li a:hover span.map_li_tralie {
+			left:30px;
+			top:-150px;
+  		}
+		
+		#map li a:hover span.map_li_speelweide {
+			left:20px;
+			top:-40px;
+  		}
+	
+		#map a.map_inkom {
+			top:185px;
+			left:525px;
+			width:50px;
+			height:50px;
+		}
+		
+		#map a.map_sociaal {
+			top:115px;
+			left:350px;
+			width:50px;
+			height:50px;
+		}
+		
+		#map a.map_tralie {
+			top:285px;
+			left:190px;
+			width:50px;
+			height:50px;
+		}
+		
+		#map a.map_speelweide{
+			top:205px;
+			left:15px;
+			width:50px;
+			height:50px;
+		}
+		
+		img.mapimage
+		{
+		border:0px;
+		}
+
+/*slimbox*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* SLIMBOX */
+
+#lbOverlay {
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	cursor: pointer;
+}
+
+#lbCenter, #lbBottomContainer {
+	position: absolute;
+	z-index: 9999;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.lbLoading {
+	background: #fff url(loading.gif) no-repeat center;
+}
+
+#lbImage {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 10px solid #fff;
+	background-repeat: no-repeat;
+}
+
+#lbPrevLink, #lbNextLink {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 50%;
+	outline: none;
+}
+
+#lbPrevLink {
+	left: 0;
+}
+
+#lbPrevLink:hover {
+	background: transparent url(prevlabel.gif) no-repeat 0 15%;
+}
+
+#lbNextLink {
+	right: 0;
+}
+
+#lbNextLink:hover {
+	background: transparent url(nextlabel.gif) no-repeat 100% 15%;
+}
+
+#lbBottom {
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666;
+	line-height: 1.4em;
+	text-align: left;
+	border: 10px solid #fff;
+	border-top-style: none;
+}
+
+#lbCloseLink {
+	display: block;
+	float: right;
+	width: 66px;
+	height: 22px;
+	background: transparent url(closelabel.gif) no-repeat center;
+	margin: 5px 0;
+	outline: none;
+}
+
+#lbCaption, #lbNumber {
+	margin-right: 71px;
+}
+
+#lbCaption {
+	font-weight: bold;
+}
+
+
+
+/*jqueryalerts*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+#popup_container {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	min-width: 300px; /* Dialog will be no smaller than this */
+	max-width: 600px; /* Dialog will wrap after this width */
+	background: #FFF;
+	border: solid 5px #71bf44;
+	color: #000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#popup_title {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.75em;
+	color: #ffffff;
+	background: #ffffff url(images/title.gif) top repeat-x;
+	border: solid 1px #FFF;
+	border-bottom: solid 1px #71bf44;
+	cursor: default;
+	padding: 0em;
+	margin: 0em;
+}
+
+#popup_content {
+	background: 16px 16px no-repeat url(images/info.gif);
+	padding: 1em 1.75em;
+	margin: 0em;
+}
+
+#popup_content.alert {
+	background-image: url(images/info.gif);
+}
+
+#popup_content.confirm {
+	background-image: url(images/important.gif);
+}
+
+#popup_content.prompt {
+	background-image: url(images/help.gif);
+}
+
+#popup_message {
+	padding-left: 48px;
+}
+
+#popup_panel {
+	text-align: center;
+	margin: 1em 0em 0em 1em;
+}
+
+#popup_prompt {
+	margin: .5em 0em;
+}
+
+
+/*DATAPICKER¨*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+
+/* This is a very basic stylesheet for the date-picker. Feel free to create your own. */
+
+/* Hide the input by using a className */
+input.fd-hidden-input,
+select.fd-hidden-input
+        {
+        display:none;
+        }
+/* Screen reader class - hides it from the visual display */
+.fd-screen-reader
+        {
+        position:absolute;
+        left:-999em;
+        top:0;
+        width:1px;
+        height:1px;
+        overflow:hidden; 
+        outline: 0 none;
+	-moz-outline: 0 none;
+        } 
+/* Disabled datePicker and activation button */
+a.dp-disabled,
+.dp-disabled table
+        {
+        opacity:.3 !important;           
+        filter:alpha(opacity=40);           
+        }
+.dp-disabled,
+.dp-disabled td,
+.dp-disabled th,
+.dp-disabled th span
+        {
+        cursor:default !important;          
+        }
+a.date-picker-control:focus,
+div.datePicker table td:focus 
+        {
+        overflow:hidden;
+        outline:0 none;
+	-moz-outline: 0 none;
+	color:rgb(100,130,170) !important;
+        }
+/* The wrapper div */
+div.datePicker
+        {
+        position:absolute;        
+        z-index:9999;
+        text-align:center;
+
+        /* Change the font-size to suit your design's CSS. The following line is for the demo that has a 12px font-size defined on the body tag */
+        font:900 0.8em/1em Verdana, Sans-Serif;
+
+        /* For Example: If using the YUI font CSS, uncomment the following line to get a 10px font-size within the datePicker */
+        /* font:900 77%/77% Verdana, sans-serif; */
+        
+        /* Or, if you prefer a pixel precision */
+        /* font:900 12px/12px Verdana, sans-serif; */
+        
+        background:transparent;
+
+        /* Mozilla & Webkit extensions to stop text-selection. */
+        -moz-user-select:none;
+        -khtml-user-select:none;                 
+        }  
+/* Styles for the static datePickers */
+div.static-datepicker
+        {
+        position:relative;        
+        top:5px;
+        left:0;
+        }
+div.datePicker table
+        {
+        width:auto;
+        height:auto;
+        border-collapse:separate;         
+        } 
+/* Draggable datepickers */
+div.datePicker tfoot th.drag-enabled,
+div.datePicker thead th.drag-enabled,
+div.datePicker thead th.drag-enabled span
+        {
+        cursor:move;
+        }
+/* The iframe hack to cover selectlists in Internet Explorer <= v6 */
+iframe.iehack
+        {
+        position:absolute;
+        background:#fff;
+        z-index:9998;
+        padding:0;
+        border:0;
+        display:none;
+        margin:0;
+        }
+/* The "button" created beside each input for non-static datePickers */
+a.date-picker-control:link,
+a.date-picker-control:visited
+        {
+        position:relative;
+        /* Moz & FF */
+        display: -moz-inline-stack;
+        border:0 none;
+        padding:0;
+        margin:0 0 0 4px;
+        background:transparent url(../media/cal-grey.gif) no-repeat 50% 50%;
+        min-width:16px;
+        line-height:1;
+        cursor:pointer;
+        visibility:visible;
+        text-decoration:none;
+        vertical-align:top;         
+        }
+a.date-picker-control:hover,
+a.date-picker-control:active,
+a.date-picker-control:focus,
+a.dp-button-active:link,
+a.dp-button-active:visited,
+a.dp-button-active:hover,
+a.dp-button-active:active,
+a.dp-button-active:focus
+        {
+        background:transparent url(../media/cal.gif) no-repeat 50% 50% !important;
+        }
+/* Feed IE6 the following rule, IE7 should handle the min-width declared above */
+* html a.date-picker-control
+        {
+        width:16px;
+        }
+/* IE, Safari & Opera. Seperate CSS rule seems to be required. */
+a.date-picker-control
+        {
+        display:inline-block;
+        }
+a.date-picker-control span
+        {
+        display:block;
+        width:16px;
+        height:16px;
+        margin:auto 0;
+        }
+/* Default "button" styles */
+div.datePicker thead th span
+        {
+        display:block;
+        padding:0;
+        margin:0;
+        text-align:center;
+        line-height:1em;
+        border:0 none;
+        background:transparent;
+        font-weight:bold;
+        cursor:pointer;
+        }
+/* The "month, year" display */
+div.datePicker th span.month-display,
+div.datePicker th span.year-display
+        {
+        display:inline;
+        text-transform:uppercase;
+        letter-spacing:1px;
+        font:normal 1.2em Verdana, Sans-Serif;
+        cursor:default;          
+        }
+/* Next & Previous (month, year) buttons */
+div.datePicker th span.prev-but,
+div.datePicker th span.next-but
+        {
+        font-weight:lighter;
+        font-size:2.4em;
+        font-family: georgia, times new roman, palatino, times, bookman, serif;
+        cursor:pointer !important;
+        }
+/* Hover effect for Next & Previous (month, year) buttons */
+div.datePicker th span.prev-but:hover,
+div.datePicker th span.next-but:hover,
+div.datePicker th span.today-but:hover
+        {
+        color:#a84444;
+        }
+/* Today button */
+div.datePicker th span.today-but
+        {
+        text-align:center;
+        margin:0 auto;
+        font:normal 1em Verdana, Sans-Serif;
+        width:100%;
+        text-decoration:none;
+        padding-top:0.3em;
+        text-transform:uppercase;
+        vertical-align:middle;
+        cursor:pointer !important          
+        }
+/* Disabled buttons */ 
+div.dp-disabled th span.prev-but,
+div.dp-disabled th span.next-but,
+div.dp-disabled th span.today-but,
+div.dp-disabled th span.prev-but:hover,
+div.dp-disabled th span.next-but:hover,
+div.dp-disabled th span.today-but:hover,
+div.datePicker th span.prev-but.fd-disabled:hover,
+div.datePicker th span.next-but.fd-disabled:hover,
+div.datePicker thead th span.fd-disabled,
+div.datePicker th span.fd-disabled:hover
+        {
+        color:#aaa;
+        cursor:default !important; 
+        opacity:1;        
+        }   
+/* The mon, tue, wed etc day buttons */
+div.datePicker th span.fd-day-header
+        {
+        text-align:center;
+        margin:0 auto;
+        font:900 1em Verdana, Sans-Serif;
+        text-decoration:none;
+        text-transform:lowercase;
+        cursor:pointer;          
+        }
+/* The table */
+div.datePicker table
+        {               
+        margin:0;
+        padding:0;
+        border:1px solid #ccc;        
+        background:#fff url(../media/gradient-e5e5e5-ffffff.gif) repeat-x 0 -20px;
+        text-align:center;
+        border-spacing:2px;
+        padding:0.3em; 
+        width:auto;             
+        empty-cells:show;   
+        border-radius:0.8em;             
+        -moz-border-radius:0.8em;
+        -moz-box-shadow:0px 0px 5px #aaa;               
+        }
+/* Common TD & TH styling */
+div.datePicker table td,
+div.datePicker table tbody th
+        {                 
+        border:0 none;
+        padding:0;
+        text-align:center;
+        vertical-align:middle;               
+        cursor:pointer;
+        background:#fff url(../media/gradient-e5e5e5-ffffff.gif) repeat-x 0 -40px;
+        width:3em;
+        height:3em;   
+        overflow:hidden;      
+        outline:transparent none 0px;        
+        border:1px solid #ccc;
+        text-transform:none;         
+        -moz-border-radius:2px;         
+        border-radius:2px;
+        }
+div.datePicker table td:focus,
+div.datePicker table td:active
+        {
+        outline:0 none red;
+        }
+div.datePicker table th
+        {
+        border:0 none;
+        padding:0;        
+        font-weight:bold;
+        color:#222;
+        text-align:center;
+        vertical-align:middle; 
+        text-transform:none;        
+        }
+div.datePicker table thead th
+        {
+        height:auto !important;
+        }
+div.datePicker table tbody th
+        {                          
+        border:1px solid #dcdcdc;        
+        }
+/* Week number display */
+div.datePicker table thead th.date-picker-week-header,
+div.datePicker table tbody th.date-picker-week-header
+        {
+        font-style:oblique;  
+        background:transparent;
+        cursor:default;         
+        }
+div.datePicker table thead th.date-picker-week-header
+        {
+        cursor:help;
+        border:0 none;
+        padding:0 0 0.2em 0;
+        }
+/* tfoot status bar */
+div.datePicker tfoot th
+        {
+        cursor:default;
+        font-weight:normal;
+        text-transform:uppercase;
+        letter-spacing:0.1em;
+        border:0 none;
+        background:#fff;
+        height:2.8em;
+        }
+/* TD cell that is _not_ used to display a day of the month */
+div.datePicker table tbody td.date-picker-unused
+        {
+        background:#fff url(../media/backstripes.gif);
+        border-color:#dcdcdc;          
+        cursor:default !important;
+        }
+
+/* The TH cell used to display the "month, year" title */
+div.datePicker table thead th.date-picker-title
+        {
+        width:auto;
+        height:auto;
+        padding:0.4em 0;
+        }
+/* The "mon tue wed etc" day header styles */
+div.datePicker table thead th.date-picker-day-header
+        {
+        text-transform:lowercase;
+        cursor:help;
+        height:auto;
+        }
+/* The "todays date" style */
+div.datePicker table tbody td.date-picker-today
+        {
+        background:#fff url(../media/bullet2.gif) no-repeat 0 0;
+        color:rgb(100,100,100) !important;
+        }
+
+div.datePicker table tbody td.month-out.date-picker-highlight 
+        {
+        color:#aa8866 !important;
+        }
+/* The "highlight days" style */
+div.datePicker table tbody td.date-picker-highlight,
+div.datePicker table thead th.date-picker-highlight
+        {
+        color:#a86666 !important;
+        }
+/* The "active cursor" style */
+div.datePicker table tbody td.date-picker-hover
+        {
+        background:#fff url(../media/bg_header.jpg) no-repeat 0 0;
+        cursor:pointer;
+        border-color:rgb(100,130,170) !important;
+        color:rgb(100,130,170); 
+        text-shadow: 0px 1px 1px #fff;                
+        }
+
+/* The "disabled days" style */
+div.datePicker table tbody td.day-highlight2
+        {          
+        background:#fff url(../media/gradient_orange.gif) repeat-x 0 -20px;
+        color:#000000 !important;
+        cursor:default;
+        } 
+/* The "disabled days" style */
+div.datePicker table tbody td.day-highlight1
+        {          
+        background:#fff url(../media/gradient_red.gif) repeat-x 0 -20px;
+        color:#000000 !important;
+        cursor:default;
+        } 
+div.datePicker table tbody td.day-disabled
+        {          
+        background:#fff url(../media/backstripes.gif) no-repeat 0 0;
+        color:#aaa !important;
+        cursor:default;
+        text-decoration:line-through;
+        } 
+		
+div.datePicker table tbody td.month-out 
+        {
+        border-color:#ddd;
+        color:#aaa !important;
+        background:#fff url(../media/gradient-e5e5e5-ffffff.gif) repeat-x 0 -40px;                             
+        } 
+/* The "selected date" style */
+div.datePicker table tbody td.date-picker-selected-date
+        {
+        color:#333 !important;
+        border-color:#333 !important;
+        }
+/* The date "out of range" style */
+div.datePicker table tbody td.out-of-range,
+div.datePicker table tbody td.not-selectable
+        {           
+        color:#ccc !important;
+        font-style:oblique;
+        background:#fcfcfc !important;
+        cursor:default !important;              
+        } 
+/* Week number "out of range" && "month-out" styles */
+div.datePicker table tbody th.month-out,
+div.datePicker table tbody th.out-of-range
+        {
+        color:#aaa !important;
+        font-style:oblique;
+        background:#fcfcfc !important;          
+        }
+/* week numbers "out of range" */
+div.datePicker table tbody th.out-of-range
+        {
+        opacity:0.6;
+        filter:alpha(opacity=60);
+        }  
+/* Used when the entire grid is full but the next/prev months dates cannot be selected */
+div.datePicker table tbody td.not-selectable
+        {         
+        opacity:0.8;
+        filter:alpha(opacity=80);        
+        }
+div.datePicker table tbody tr
+        {
+        display:table-row;
+        }
+div.datePicker table tfoot sup
+        {
+        font-size:0.86em;
+        letter-spacing:normal;
+        text-transform:none;
+        height: 0;
+	line-height: 1;
+	position: relative;
+	top: -0.2em;	
+	vertical-align: baseline !important;
+	vertical-align: top;  
+        }
+div.datePicker table thead th.date-picker-day-header,
+div.datePicker table thead span.month-display,
+div.datePicker table thead span.year-display
+        {            
+        text-shadow: 0px 1px 1px #fff;                            
+        }
+/* You can add focus effects (for everything but IE6) like so: */
+
+div.datepicker-focus table.datePickerTable
+        {
+        border-color:#999 !important;         
+        }
+div.datePicker table tbody tr td:focus,
+div.datePicker table tbody td.date-picker-hover 
+        {
+        overflow:hidden;
+        outline:0px solid #ff0000;        
+	-moz-outline: 0 none;
+	-o-highlight:0 none;
+	color:rgb(100,130,170) !important;        	
+        }
+div.static-datepicker table
+        {
+        -moz-box-shadow:0 0 0 transparent;
+        
+        }               
+div.datepicker-focus table
+        {
+        /* Naughty, naughty - but we add a highlight using the table's border colour */
+        outline:none;
+         -moz-box-shadow:0px 0px 5px #aaa;         
+        }    
+       *:-o-prefocus{outline : -o-highlight-border;}
+ 
+/* INTERNET EXPLORER WOES
+   ======================
+   
+   Hover Effects
+   -------------
+   
+   IE cannot deal with :focus on the TR so the datePicker script adds the class "dp-row-highlight" to the
+   row currently being hovered over. This should enable you to add hover effects if desired.
+   
+   e.g. the following rule will highlight the cell borders in another colour when a row is moused over,
+   it looks like crap though so I didn't include the rule within the demo:
+   
+div.datePicker table tbody tr.dp-row-highlight td
+        {
+        border-color:#aaa;
+        }
+*/
+
+/* Remove the images for Internet Explorer <= v6 using the "* html" hack  
+   This is a workaround for a nasty IE6 bug that never caches background images on dynamically created DOM nodes
+   which means that they are downloaded for every cell for every table - nasty! */    
+* html div.datePicker table td
+        {
+        background-image:none;
+        }
+* html div.datePicker table td.date-picker-unused
+        {
+        background:#f2f2f2;
+        }
+body.fd-drag-active 
+        {
+        -webkit-user-select:none;
+        }
+/* Chrome has problems with the -webkit-box-shadow and -webkit-border-radius styles together 
+   Remove one or the other to get things looking less ugly */       
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+        div.datePicker table
+                {
+                border-spacing:0.3em;
+                /* Naughty, naughty */
+                -webkit-box-shadow:0px 0px 5px #aaa;                 
+                -webkit-border-radius:0.8em;                
+                }          
+        div.static-datepicker table
+                {
+                -webkit-box-shadow:0 0 0 transparent;
+                } 
+        div.datepicker-focus table
+                {        
+                -webkit-box-shadow:0px 0px 5px #aaa;       
+                }       
+        div.datePicker table td,
+        div.datePicker table tbody th
+                {
+                padding:0.1em;
+                -webkit-border-radius:2px;
+                }
+        div.datePicker table tbody td.date-picker-hover
+                {                
+                -webkit-box-shadow:0px 0px 1px rgb(100,130,170);
+                }       
+}
